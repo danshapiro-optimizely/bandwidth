@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
+import WorkloadReducer from './reducer_workload';
+
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  workload: WorkloadReducer
 });
 
 export default rootReducer;
